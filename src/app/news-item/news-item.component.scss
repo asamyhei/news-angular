@@ -1,0 +1,12 @@
+.link {
+  color: blue;
+  background-color: black;
+}
+
+.title {
+  color: rebeccapurple;
+  .link {
+    background-color: red;
+  }
+}
+
