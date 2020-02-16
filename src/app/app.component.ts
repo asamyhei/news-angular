@@ -13,6 +13,6 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.http.get('http://localhost:9001/news').subscribe((value: any) => this.response = value);
+    this.http.get('https://news-parser-app.herokuapp.com/news').subscribe((value: any) => this.response = value);
   }
 }
