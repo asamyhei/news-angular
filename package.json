@@ -23,7 +23,8 @@
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1",
     "body-parser": "latest",
-    "express": "latest"
+    "express": "latest",
+    "cors": "^2.8.5"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.5",
@@ -34,7 +35,6 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
-    "cors": "^2.8.5",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
