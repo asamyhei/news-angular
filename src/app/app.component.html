@@ -1,9 +1,4 @@
-<app-header></app-header>
-
-<div *ngIf="response && response.length > 0">
-  <div *ngFor="let res of response">
-    <app-news-item [link]="res.link" [title]="res.title"></app-news-item>
-  </div>
+<div class="tiles">
+  <app-news-item *ngFor="let res of response" [link]="res.link" [title]="res.title"
+                 [origin]="res.origin"></app-news-item>
 </div>
-
-

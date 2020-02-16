@@ -8,11 +8,14 @@ import {HttpClient} from '@angular/common/http';
 })
 export class AppComponent implements OnInit {
   public response: any[];
+  test: any;
 
   constructor(private http: HttpClient) {
   }
 
   ngOnInit(): void {
-    this.http.get('https://news-parser-app.herokuapp.com/news').subscribe((value: any) => this.response = value);
+    this.http.get('https://news-parser-app.herokuapp.com/news').subscribe((res: any) => {
+      this.response = res.sort((a, b) => a.origin.localeCompare(b.origin));
+    });
   }
 }

@@ -1,12 +1,23 @@
+.element
+{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 20vw;
+  height: 40vh;
+  border: 2px solid black;
+  border-radius: 25px;
+  margin: 10px;
+  padding: 10px;
+}
 .link {
-  color: blue;
-  background-color: black;
+  font-size: smaller;
+  color: lightcoral;
+  word-wrap: break-word;
 }
 
 .title {
-  color: rebeccapurple;
-  .link {
-    background-color: red;
-  }
+  color: royalblue;
+  word-wrap: break-word;
 }
 

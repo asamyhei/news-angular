@@ -9,6 +9,7 @@ export class NewsItemComponent implements OnInit {
 
   @Input() title: string;
   @Input() link: string;
+  @Input() origin: string;
 
   constructor() { }
 
