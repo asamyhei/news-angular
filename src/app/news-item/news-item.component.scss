@@ -1,15 +1,14 @@
 .element
 {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
   flex-wrap: wrap;
   width: 20vw;
-  height: 40vh;
-  border: 2px solid black;
-  border-radius: 25px;
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
 }
+
+
 .link {
   font-size: smaller;
   color: lightcoral;
@@ -20,4 +19,22 @@
   color: royalblue;
   word-wrap: break-word;
 }
-
+/*
+#board {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(245,247,250);
+}*/
+.card {
+  width: 320px;
+  height: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 1%;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.1);
+  background-color: white;
+  transform: translateX(-50%) translateY(-50%);
+}
