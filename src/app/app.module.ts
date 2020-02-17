@@ -9,7 +9,6 @@ import {NewsItemComponent} from './news-item/news-item.component';
 import {ServiceWorkerModule} from '@angular/service-worker';
 import {environment} from '../environments/environment';
 
-import {hmTouchEvents} from './'
 @NgModule({
   declarations: [
     AppComponent,
