@@ -1,4 +1,7 @@
-  <app-news-item *ngFor="let res of response" [link]="res.link" [title]="res.title"
+<head>
+<script src="node_modules/hammerjs/hammer.js"></script>
+</head>
+<app-news-item *ngFor="let res of response" [link]="res.link" [title]="res.title"
                  [origin]="res.origin"></app-news-item>
 
 
