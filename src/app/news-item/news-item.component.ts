@@ -1,4 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {DomSanitizer} from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-news-item',
@@ -11,9 +13,13 @@ export class NewsItemComponent implements OnInit {
   @Input() link: string;
   @Input() origin: string;
 
-  constructor() { }
+  constructor(private sanitizer: DomSanitizer) { }
 
   ngOnInit() {
+  }
+  
+  sanitize(url:string) {
+    return this.sanitizer.bypassSecurityTrustUrl(url);
   }
 
 }
